@@ -36,7 +36,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     product_id = config.get(CONF_PRODUCT)
     store_id = config.get(CONF_STORE)
     url_locale = config.get(CONF_URL_LOCALE)
-    name = 'IKEA - {}'.format(product_id)
+    name = 'IKEA - {} {}'.format(store_id, product_id)
     friendly_name = config.get(CONF_FRIENDLY_NAME, name)
 
     _LOGGER.debug("Setting up the sensor for store %s", store_id)
