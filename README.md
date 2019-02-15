@@ -25,7 +25,7 @@ sensor:
 
 **store**<br/>
 &nbsp;&nbsp;&nbsp;(*string*) (*Required*) The id of the store to check availability in. Some countries are available [here](https://github.com/psvanstrom/hass/blob/master/ikea_store_ids.md), but if your country is<br/>
-&nbsp;&nbsp;&nbsp;missing, retrieve your store id from the HTML of the availability drop down list on the product page at IKEA.
+&nbsp;&nbsp;&nbsp;missing, retrieve your store id from the HTML of the availability drop down list on the product page at IKEA. **Note:** use single quotes around the store_id to make sure it gets interpreted as a string and not a number.
 
 **url_locale**<br/>
 &nbsp;&nbsp;&nbsp;(*string*) (*Required*) The locale to use in the URL when querying IKEA. Check your country specific IKEA website URL<br/>
